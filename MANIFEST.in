@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include vulcan *.css
+recursive-include vulcan *.csv
+recursive-include vulcan *.html
+recursive-include vulcan *.ico
+recursive-include vulcan *.js
+recursive-include vulcan *.json
+recursive-include vulcan *.md
+recursive-include vulcan *.png
+recursive-include vulcan *.py
+recursive-include vulcan *.svg
+recursive-include vulcan *.txt
+recursive-exclude vulcan *.pyc
