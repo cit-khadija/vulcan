@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-15 15:31:11.770323",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "door_no",
+  "column_break_efxgx",
+  "item_group",
+  "door_type",
+  "specifications_section",
+  "item_specifications",
+  "required_items_section_section",
+  "raw_materials_tab",
+  "hardware_set_section_section",
+  "hardware_set",
+  "hardware_set_summary"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "door_no",
+   "fieldtype": "Data",
+   "label": "Door No"
+  },
+  {
+   "fieldname": "column_break_efxgx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "label": "Item Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "door_type",
+   "fieldtype": "Data",
+   "label": "Door Type"
+  },
+  {
+   "fieldname": "specifications_section",
+   "fieldtype": "Section Break",
+   "label": "Specifications"
+  },
+  {
+   "fieldname": "item_specifications",
+   "fieldtype": "Table",
+   "label": "Item Specifications",
+   "options": "Specification"
+  },
+  {
+   "fieldname": "required_items_section_section",
+   "fieldtype": "Section Break",
+   "label": "Required Items"
+  },
+  {
+   "fieldname": "raw_materials_tab",
+   "fieldtype": "Table",
+   "label": "Raw Materials",
+   "options": "BOM Item"
+  },
+  {
+   "fieldname": "hardware_set_section_section",
+   "fieldtype": "Section Break",
+   "label": "Hardware Set"
+  },
+  {
+   "fieldname": "hardware_set",
+   "fieldtype": "Link",
+   "label": "Hardware Set",
+   "options": "Hardware Set"
+  },
+  {
+   "fieldname": "hardware_set_summary",
+   "fieldtype": "Long Text",
+   "label": "Hardware Set Summary",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-09 19:20:48.949665",
+ "modified_by": "Administrator",
+ "module": "Vulcan",
+ "name": "Item Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

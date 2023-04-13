@@ -30,6 +30,11 @@ app_license = "MIT"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+    "Quotation" : "public/js/quotation.js",
+    "Sales Order": "public/js/sales_order.js", 
+    "Delivery Note": "public/js/delivery_note.js"
+    }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -109,6 +114,14 @@ app_license = "MIT"
 #		"on_trash": "method"
 #	}
 # }
+doc_events = {
+    "Quotation": {
+        "after_save": "vulcan.events.quotation.after_save_method"
+    },
+    # "Work Order": {
+    #     "before_save": "vulcan.events.work_order.before_save_method"
+    # }
+}
 
 # Scheduled Tasks
 # ---------------
@@ -199,3 +212,33 @@ app_license = "MIT"
 # auth_hooks = [
 #	"vulcan.auth.validate"
 # ]
+
+fixtures = [
+    {
+        "dt": "Custom Field", "filters": [
+            ["name","in",[
+                #Quotation
+                "Quotation-hardware_set",
+                "Quotation-hw_items",
+                "Quotation-hw_set_data",
+                "Quotation-hardware_set_summary",
+                #Quotation Item
+                "Quotation Item-hardware_set",
+                #Sales Order
+                "Sales Order-hardware_set",
+                "Sales Order-hw_items",
+                "Sales Order-hw_set_data",
+                "Sales Order-hardware_set_summary",
+                #Sales Order Item
+                "Sales Order Item-hardware_set",
+                #Delivery Note
+                "Delivery Note-hw_items",
+                "Delivery Note-hw_set_data",
+                #Delivery Note Item
+                "Delivery Note Item-is_hw_set_item",
+                "Delivery Note Item-hardware_set",
+                "Delivery Note Item-so_detail_ref" #CHECK TODO
+            ]]
+        ]
+    }
+]

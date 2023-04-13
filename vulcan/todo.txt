@@ -1,0 +1,8 @@
+- Bring all site customizations to app
+    - Hardware Set Vulcan module
+        - Custom fields - Done
+
+- Bring Client Scripts
+- Bring Server Scripts
+
+- #CHECK TODO
